@@ -33,7 +33,7 @@ from sarvam_voice import (
     SARVAM_LANG_MAP,
 )
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".", static_folder=".")
 app.secret_key = "cooperative_chatbot_secret_key_2026"
 
 LANGUAGES = [
